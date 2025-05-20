@@ -1,5 +1,4 @@
 # build output
-dist
 
 # dependencies
 node_modules/
@@ -21,6 +20,5 @@ yarn-error.log*
 .netlify
 netlify
 
-.astro
 .idea
 .vercel

@@ -10,15 +10,15 @@ import markdoc from "@astrojs/markdoc";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 import remarkCodeTitles from 'remark-code-titles'
-import decapCmsOauth from "astro-decap-cms-oauth";
 
 // Full Astro Configuration API Documentation:
 // https://docs.astro.build/reference/configuration-reference
 
 // https://astro.build/config
 export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
-  output: 'server',
-  site: 'https://astro-ink.vercel.app', // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
+  output: 'static',
+  site: 'https://runixs.github.io', // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
+  base: '/',
   server: {
     // port: 4321, // The port to run the dev server on.
   },
@@ -39,7 +39,6 @@ export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
       applyBaseStyles: false,
     }), 
     sitemap(),
-    decapCmsOauth()
   ],
   vite: {
     plugins: [],
@@ -52,5 +51,5 @@ export default defineConfig( /** @type {import('astro').AstroUserConfig} */{
       allowNodeBuiltins: true
     }
   },
-  adapter: vercel()
+  // adapter: vercel()		// for static 
 });

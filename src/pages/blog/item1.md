@@ -1,9 +1,9 @@
 ---
-layout: $/layouts/post.astro
-title: Item1
-description: Test
-author: Justin
-authorTwitter: "@justin"
-date: 2023-12-11T00:48:30.405Z
+title: "Hello World"
+description: "Welcome to Astro Ink"
+date: 2024-05-20
+tags: []
+author: "runixs"
 ---
-GThis is the body
+
+블로그 본문입니다.
